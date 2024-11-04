@@ -1,0 +1,54 @@
+body{
+    text-align:center;
+    background: rgb(255,179,205);
+    background: radial-gradient(circle, rgba(255,179,205,1) 0%, rgba(197,236,255,1) 100%); 
+}
+
+h1{
+    color:#FFF;
+    font-family:'Caveat';
+    font-weight:200px;
+    font-size:90px;
+    
+}
+
+#clock {
+    color:#FFF;
+    font-family:'Zilla Slab';
+    font-size: 25px;
+}
+/*
+=================================================
+SEARCH
+=================================================
+*/
+form{
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
+ }
+ input{
+    width:100%;
+    font-family:'Afacad Flux';
+    font-size:32px;
+    margin:5px 0;
+    border:none;
+    padding:10px;
+    outline:none;
+    display:inline-block;
+    border-radius: 30px;
+ }
+ .search-bar{
+    width:80%;
+ }
+ .submit-button{
+    width:15%;
+    background:#FFB3CD;
+    color:#FFF;
+    border-radius:30px;
+    font-family:'Afacad Flux';
+    margin:5px auto;
+ }
+
+
+ 
