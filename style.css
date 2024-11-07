@@ -50,5 +50,48 @@ form{
     margin:5px auto;
  }
 
-
- 
+/*
+=================================================
+BOOKMARKS
+=================================================
+*/
+.bookmarks a{
+    text-decoration: none;
+ }
+ .bookmarks{
+    padding:30px;
+    clear:both;
+ }
+ .bookmarks i{
+    font-size:20px;
+    margin:0 10px;
+    color:#FFF;
+    transition:.15s;
+    vertical-align: top;
+ }
+ .bookmarks i:hover{
+    font-size:32px;
+    position:relative;
+ }
+ /*
+=================================================
+SPARKLES
+=================================================
+*/
+.sparkle-container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   pointer-events: none;
+}
+.sparkle {
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   background-color: white;
+   border-radius: 50%;
+   opacity: 0;
+   animation: sparkle-animation 1s ease-out forwards;
+}
