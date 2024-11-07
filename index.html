@@ -13,23 +13,20 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    </head>
+        <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
+
+</head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <a class="weatherwidget-io" href="https://forecast7.com/en/42d07n87d79/glenview/" data-label_1="GLENVIEW" data-label_2="WEATHER" data-theme="original" data-basecolor="rgba(255, 255, 255, 0)" data-shadow="rgba(255, 255, 255, 0.36)" data-highcolor="#b9606f" data-lowcolor="#95c1ff" data-suncolor="#ffe7b4" data-cloudcolor="#ffffff" >GLENVIEW WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/42d07n87d79/glenview/?unit=us" data-label_1="GLENVIEW" data-label_2="WEATHER" data-font="Ubuntu" data-theme="original" data-basecolor="rgba(255, 255, 255, 0)" data-shadow="rgba(255, 255, 255, 0.36)" data-highcolor="#b9606f" data-lowcolor="#95c1ff" data-suncolor="#ffe7b4" data-cloudcolor="#ffffff" >GLENVIEW WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+
         <h1>Hello Kenzie!</h1>
 
         <!-- GOOGLE SEARCH -->
@@ -44,12 +41,19 @@
         <section class="bookmarks">
             <a href="https://mail.google.com" target="_blank">
                 <i class="fas fa-envelope"></i>
-            </a>
-            <i class="fas fa-sticky-note" onclick="showNote()"></i> 
+            </a> 
             <a href="https://open.spotify.com" target="_blank">
-                   <i class="fa-brands fa-spotify"></i>  
+                   <i class="fab fa-spotify"></i>  
             </a>       
+            <a href="https://github.com/dashboard" target="_blank">
+                <i class="fab fa-github"></i>  
+            </a>    
             </section>
+
+            <div class="sparkle">
+                <!-- The sparkles will be dynamically created and added here -->
+              </div>
+              <script src="script.js"></script>
             
     </body>
 
@@ -57,9 +61,7 @@
 
         <div id="clock"></div>
 
-        <div class="sparkle-container" id="sparkle-container"></div>
-
-        <script src="script.js"></script>
+        
     </body>    
 
         

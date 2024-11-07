@@ -29,7 +29,7 @@ form{
  }
  input{
     width:100%;
-    font-family:'Afacad Flux';
+    font-family:'Afacad';
     font-size:32px;
     margin:5px 0;
     border:none;
@@ -46,7 +46,7 @@ form{
     background:#FFB3CD;
     color:#FFF;
     border-radius:30px;
-    font-family:'Afacad Flux';
+    font-family:'Afacad';
     margin:5px auto;
  }
 
@@ -73,25 +73,46 @@ BOOKMARKS
     font-size:32px;
     position:relative;
  }
- /*
-=================================================
-SPARKLES
-=================================================
-*/
-.sparkle-container {
+/* style.css */
+body, html {
+   height: 100%;
+   margin: 0;
+   overflow: hidden;
+   background-color: #121212;
+ }
+ 
+ .container {
    position: absolute;
    top: 0;
    left: 0;
    width: 100%;
    height: 100%;
-   pointer-events: none;
-}
-.sparkle {
+ }
+ 
+ .sparkle {
    position: absolute;
-   width: 10px;
-   height: 10px;
-   background-color: white;
-   border-radius: 50%;
-   opacity: 0;
-   animation: sparkle-animation 1s ease-out forwards;
-}
+   width: 30px;   /* Adjust based on your image size */
+   height: 30px;  /* Adjust based on your image size */
+   background-image: url('Sparkles.png');  /* Add the path to your image */
+   background-size: contain;  /* Ensure the image is fully visible */
+   background-repeat: no-repeat;  /* Avoid repeating the image */
+   pointer-events: none;
+   opacity: 1;
+   animation: sparkle-animation 300ms ease-out forwards;
+ }
+ 
+ @keyframes sparkle-animation {
+   0% {
+     transform: scale(1) rotate(0deg);
+     opacity: 1;
+   }
+   50% {
+     transform: scale(1.5) rotate(180deg);
+     opacity: 0.7;
+   }
+   100% {
+     transform: scale(2) rotate(360deg);
+     opacity: 0;
+   }
+ }
+ 
